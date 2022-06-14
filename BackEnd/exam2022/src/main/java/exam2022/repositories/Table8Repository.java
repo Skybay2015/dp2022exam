@@ -9,7 +9,7 @@ import exam2022.data3.Data3;
 @RepositoryRestResource
 @CrossOrigin(origins = "*")
 
-public interface Data3Repository extends JpaRepository<Data3, Integer> {
+public interface Table8Repository extends JpaRepository<Data3, Integer> {
 
 
 }

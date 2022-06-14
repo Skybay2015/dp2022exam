@@ -1,5 +1,5 @@
-CREATE TABLE "data3" (
+CREATE TABLE "table8" (
   "prkey" serial PRIMARY KEY,
-  "title5" varchar(100),
-  "age" bigint
+  "name11" varchar(100),
+  "weight" short
 );

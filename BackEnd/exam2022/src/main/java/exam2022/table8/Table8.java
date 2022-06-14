@@ -7,24 +7,24 @@ import javax.persistence.Table;
 
 
 
-	
+
 @Entity
 @Table(name="tablename1")
-public class Data3 {
+public class Table8 {
 	@Id
-	@GeneratedValue	
+	@GeneratedValue
 	private int prkey;
-	private String title5;
-	private long age;
-	
-	public Data3() {
+	private String name11;
+	private short weight;
+
+	public Table8() {
 	}
-	
-	public Data3(int prkey, String title5, long age) {
+
+	public Table8(int prkey, String name11, short weight) {
 		super();
 		this.prkey = prkey;
-		this.title5 = title5;
-		this.age = age;
+		this.name11 = name11;
+		this.weight = weight;
 	}
 
 	public int getPrkey() {
@@ -35,28 +35,28 @@ public class Data3 {
 		this.prkey = prkey;
 	}
 
-	public String getTitle5() {
-		return title5;
+	public String getName11() {
+		return name11;
 	}
 
-	public void setTitle5(String title5) {
-		this.title5 = title5;
+	public void setName11(String name11) {
+		this.name11 = name11;
 	}
 
-	public long getAge() {
-		return age;
+	public long getWeight() {
+		return weight;
 	}
 
-	public void setAge(long age) {
-		this.age = age;
+	public void setWeight(short weight) {
+		this.weight = weight;
 	}
-	
-	
 
-	
-	
-	
-	
+
+
+
+
+
+
 	//@Override
 	//public String toString() {
 		//return "{\"id\": \""+id+"\",\"title\":\""+title+"\",\"price\":"+price+", \"desc\":\""+desc+"\"}";
