@@ -1,0 +1,12 @@
+<form #form1="ngForm" (ngSubmit)="updData(form1.value)" class="updform">
+    <div  *ngFor="let a of sportList" >
+        <input type="radio" value="{{a.id}}" name="id" ngModel><label for="id">{{a.title}}</label>
+    </div>
+    <div *ngIf="selectedItem"></div>
+    <form #form2="ngForm" (ngSubmit)="updData(form2.value)" class="updform">
+    <input type="number" placeholder="number" name="title" ngModel="{{selectedItem?.id}}">
+    <input type="text" placeholder="Title" name="title" ngModel="{{selectedItem?.title}}">
+    <input type="number" min="1" max="5000" placeholder="age" name="age" ngModel="{{selectedItem?.price}}">
+    <input type="submit" class="updbutton" value="Upd">
+    </form>
+</form>
